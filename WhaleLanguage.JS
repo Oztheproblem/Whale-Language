@@ -1,16 +1,24 @@
-let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+const input = 'turpentine and turtles'
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+const resultArray = []
 
-//console.log(secretMessage.length);
-secretMessage.pop()
-//console.log(secretMessage.length);
-secretMessage.push('to', 'Program')
-//console.log(secretMessage);
-secretMessage[7] = 'right'
-//console.log(secretMessage);
-secretMessage.shift()
-//console.log(secretMessage);
-secretMessage.unshift('Programming')
-//console.log(secretMessage);
-secretMessage.splice(6, 5, 'know')
-//console.log(secretMessage);
-console.log(secretMessage.join(' '));
+for (let inputIndex = 0; inputIndex<input.length; inputIndex++){
+ // console.log(`inputIndex is ${inputIndex}.`)
+if((input[inputIndex]) === 'e'){
+  resultArray.push(input[inputIndex]);
+}
+if((input[inputIndex]) === 'u'){
+  resultArray.push(input[inputIndex]);
+}
+for (let vowelIndex = 0; vowelIndex<vowels.length; vowelIndex++){
+  //console.log(`vowelIndex is ${vowelIndex}.`)
+
+  if(input[inputIndex] === vowels[vowelIndex]){
+   // console.log(input[inputIndex])
+   resultArray.push(input[inputIndex]);
+  }
+   }
+}
+//console.log(resultArray);
+let whaleLanguage = resultArray.join('').toUpperCase();
+ console.log(whaleLanguage);
